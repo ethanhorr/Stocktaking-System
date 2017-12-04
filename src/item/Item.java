@@ -1,5 +1,9 @@
 package item;
 
+/** 
+ * Author: Ethan Horrigan - G00350712
+ */
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -51,6 +55,7 @@ public class Item {
 		return amount;
 	}
 	
+	/* To string method & Print to file method */
 	   public String toString() {
 		  String str;
 		  str = "\nItem Name: " + name + " | Item Price: " + price + " | Item Amount: " + amount+"\n";

@@ -1,5 +1,11 @@
 package staff;
 
+import main.ExtraException;
+
+/** 
+ * Author: Ethan Horrigan - G00350712
+ */
+
 public class StockTaker extends Staff implements Extra {
 	
 	double distance;
@@ -27,6 +33,11 @@ public class StockTaker extends Staff implements Extra {
 	public int getSundaysWorked() {
 		System.out.println("How many sundays did you Work?");
 		sundaysWorked = console.nextInt();
+		
+		if (sundaysWorked==0)
+		{
+			throw  new ExtraException("No sundays worked");
+		}
 		return sundaysWorked;
 	}
 	

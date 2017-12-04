@@ -1,11 +1,16 @@
 package staff;
 
+/** 
+ * Author: Ethan Horrigan - G00350712
+ */
+
 public class Supervisor extends Staff implements Extra {
 	
 	double distance;
 	double bonus;
 	int sundaysWorked;
 
+	/*Constructor*/
 	public Supervisor() {
 		super();
 		distance = distanceTravelled();
@@ -15,7 +20,6 @@ public class Supervisor extends Staff implements Extra {
 	}
 
 	/* Interface Methods */
-	
 	@Override
 	public double distanceTravelled() {
 		System.out.println("What distance did you travel? ");
@@ -29,7 +33,7 @@ public class Supervisor extends Staff implements Extra {
 		sundaysWorked = console.nextInt();
 		return sundaysWorked;
 	}
-	
+	/* Method from the Super Class*/
 	public double getWeeklyWage() {
 		if(sundaysWorked == 0 && distance < 100) {
 			weeklyWage = hoursWorked * Constants.SUPERVISOR_RATE;

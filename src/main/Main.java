@@ -1,5 +1,9 @@
 package main;
 
+/** 
+ * Author: Ethan Horrigan - G00350712
+ */
+
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
 import java.util.ArrayList;

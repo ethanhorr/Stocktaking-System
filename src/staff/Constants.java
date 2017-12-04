@@ -1,5 +1,9 @@
 package staff;
 
+/** 
+ * Author: Ethan Horrigan - G00350712
+ */
+
 public final class Constants {
 
 	public final static double STOCKTAKER_RATE = 9.50;

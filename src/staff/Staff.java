@@ -1,5 +1,9 @@
 package staff;
 
+/** 
+ * Author: Ethan Horrigan - G00350712
+ */
+
 import java.util.Scanner;
 
 public abstract class Staff {
